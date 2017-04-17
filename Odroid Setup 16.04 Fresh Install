@@ -1,0 +1,9 @@
+#Install XRDP
+sudo apt-get update && upgrade
+sudo apt-get install xrdp
+sudo set -i.bak '/fi/a #xrdp multiple users configuration \n mate-session \n' /etc/xrdp/startwm.sh
+cd /etc/xrdp
+setxkbmap -layout us
+sudo cp km-0409.ini km-0409.ini.bak
+sudo xrdp-genkeymap km-0409.ini
+
