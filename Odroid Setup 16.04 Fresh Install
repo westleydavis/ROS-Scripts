@@ -7,3 +7,5 @@ setxkbmap -layout us
 sudo cp km-0409.ini km-0409.ini.bak
 sudo xrdp-genkeymap km-0409.ini
 
+#later
+sudo apt-get install libsdl1.2-dev
